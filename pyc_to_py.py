@@ -23,7 +23,7 @@ def decompile_pyc(pyc_path, output_dir, input_dir):
 
     logger.info(f"[*] Decompilation completed: {pyc_path} -> {target_dir}")
 
-def pyc_to_py_multithread(input_dir, output_dir, max_workers=4):
+def pyc_to_py(input_dir, output_dir, max_workers=4):
     os.makedirs(output_dir, exist_ok=True)
     pyc_files = []
 
@@ -45,3 +45,4 @@ def pyc_to_py_multithread(input_dir, output_dir, max_workers=4):
         logger.info(f"[!] Cache directory {input_dir} deleted!")
     except OSError as e:
         logger.warning(f"[!] Failed to delete {input_dir}: {e}")
+
