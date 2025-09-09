@@ -10,11 +10,14 @@ import struct
 import marshal
 import zlib
 import sys
+import logging
 
-from CloudSentinel.FingerFind.webanalyzer.utils import logger
 from pyc_to_py import pyc_to_py
 from uuid import uuid4 as uniquename
 
+
+logger = logging.getLogger("webanalyzer")
+logger.setLevel(logging.DEBUG)
 
 class CTOCEntry:
     def __init__(self, position, cmprsdDataSize, uncmprsdDataSize, cmprsFlag, typeCmprsData, name):
