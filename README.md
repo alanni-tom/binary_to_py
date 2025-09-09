@@ -1,2 +1,7 @@
-# binary_to_py
-rebuiding python binary file to resource code.
+# 文件说明
+
+
+
+------
+
+如果用python编译的二进制文件，你可以通过这个脚本进行反编译为 `.pyc` 格式的。并使用 `uncompyle6` 转换为正常的 `Python` 代码。
