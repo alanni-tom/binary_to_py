@@ -1,7 +1,12 @@
-# 文件说明
+# README
 
 
 
 ------
 
-如果用python编译的二进制文件，你可以通过这个脚本进行反编译为 `.pyc` 格式的。并使用 `uncompyle6` 转换为正常的 `Python` 代码。
+这是一个将Python编译后的二进制文件转换为你想要的python源代码的脚本，我用到了: 
+1. [pyinstxtractor]: https://raw.githubusercontent.com/extremecoders-re/pyinstxtractor/master/pyinstxtractor.py	"pyinstxtractor"
+
+2.  `uncompyle6`
+
+也就是说他是一个集成的脚本文件，你完全可以在此基础上进行二次修改。
